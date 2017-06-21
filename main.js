@@ -10,7 +10,7 @@ application.use(express.static(__dirname + '/public'));
 
 
 let dataFileInfo = {
-    users:dataFile.users.slice(0, 8)
+    users:dataFile.users.slice(0, 50)
 }
 
 
