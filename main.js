@@ -14,12 +14,22 @@ let dataFileInfo = {
 }
 
 
-
-application.get('/', function (req, res) {
-  res.render("index", dataFileInfo);
+application.get('/', function (request, response) {
+  response.render("index", dataFileInfo);
   
 })
 
-application.listen(3000, function () {
- 
+
+application.get('/:userId', (request, response) => {
+  
+  var user = dataFile.users[request.params.userId - 1]
+     response.render('singlerobot', user);
+
 });
+
+application.post('/singlerobot', (request, response) => {
+    response.redirect('singlerobot', dataFile);
+})
+
+
+application.listen(3000);

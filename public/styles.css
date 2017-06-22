@@ -45,6 +45,25 @@ h2 {
 .nojob {
     color:red;
 }
-.job, .company {
+.job, .company, {
     color:#6B7B87;
+}
+.robot-wrapper-2 {
+    display:Flex;
+}
+.education_skills {
+    margin-left: 15%;
+}
+.robot-wrapper-single {
+    background-color: #8FA7BC;
+    padding: 5% 10%;
+}
+.roundimg {
+    background-color: white;
+    border-radius: 50%;
+    margin: 10px;
+}
+h3 {
+    font-size: 35px;
+    margin-bottom: 5px;
 }

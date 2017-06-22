@@ -7,9 +7,10 @@
     <h2>Index</h2>
      <div class="robot-wrapper">
          {{#users}}
+         
          <div class=robot-container>
         <image src="{{avatar}}">
-        <div class="name">{{name}}</div>
+        <div class="name"><a href="{{id}}">{{name}}</a></div>
          {{#job}}
          <div class="job">{{job}}</div>
          {{/job}}
@@ -18,6 +19,8 @@
          {{/job}}
         <div class="company">{{company}}</div>
         </div>
+
+        
 
 
 
